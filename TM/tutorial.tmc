@@ -1,14 +1,14 @@
 /* tutorial.tmc */
 %{
-  #include <cstdlib> // for rand()
+  // #include <cstdlib> // for rand()
 %}
 
-TM typedef uint16_t Ct16 {
-  text "%05u";
-  collect x = x - x/100 + rand()/100;
+TM typedef uint16_t UINT16 { text "%5u"; }
+TM typedef UINT16 Ct16 {
+  collect x = x - x/100 + rand()/(100*0x8000);
 }
 
 TM 1 Hz Ct16 C1;
 TM 1 Hz Ct16 C2;
 
-TM 0 Hz Ct16 MFCtr, Synch;
+TM 1 Hz UINT16 MFCtr, Synch;
