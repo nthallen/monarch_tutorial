@@ -1,0 +1,55 @@
+/* uDACS_A */
+TM typedef uint8_t Fail_t { text "%02X"; }
+/* Fail&1 is the Fail Light status.
+   Fail&0x10 is the mode switch position
+   FailText and ModeText are defined in uDACS_A_conv.tmc
+TM 1 Hz Fail_t Fail;
+TM 1 Hz PwrStat_t PwrStat;
+ */
+
+/* MS5607 P and T
+TM 1 Hz MS5607_P_t MS5607_P;
+TM 1 Hz MS5607_T_t MS5607_T;
+ */
+ 
+/* DAC Channels */
+/*
+TM 1 Hz uDACS_DAC_t uDACS_A_VSet0;
+TM 1 Hz uDACS_DAC_t uDACS_A_VSet1;
+TM 1 Hz uDACS_DAC_t uDACS_A_VSet2;
+TM 1 Hz uDACS_DAC_t uDACS_A_VSet3;
+*/
+
+/* AD7770 for uDACS */
+/*
+TM 1 Hz AD7770_status_t uDACS_A_status;
+TM 1 Hz AD7770_rawAI_t uDACS_A_Raw0;
+TM 1 Hz AD7770_rawAI_t uDACS_A_Raw1;
+TM 1 Hz AD7770_rawAI_t uDACS_A_Raw2;
+TM 1 Hz AD7770_rawAI_t uDACS_A_Raw3;
+TM 1 Hz AD7770_rawAI_t uDACS_A_Raw4;
+TM 1 Hz AD7770_rawAI_t uDACS_A_Raw5;
+TM 1 Hz AD7770_rawAI_t uDACS_A_Raw6;
+TM 1 Hz AD7770_rawAI_t uDACS_A_Raw7;
+TM 1 Hz AD7770_count_t uDACS_A_N;
+TM 1 Hz AD7770_status_t uDACS_A_errors;
+*/
+
+/* ADS1115 for uDACS16 */
+/* TM 1 Hz ADS1115_status_t uDACS_A_status; */
+TM 1 Hz uDACS16_T30K75KU T1;  Address T1 0x21;
+TM 1 Hz uDACS16_T30K75KU T2;  Address T2 0x22;
+TM 1 Hz uDACS16_T30K75KU T3;  Address T3 0x23;
+TM 1 Hz uDACS16_T30K75KU T4;  Address T4 0x24;
+TM 1 Hz uDACS16_T30K75KU T5;  Address T5 0x25;
+TM 1 Hz uDACS16_T30K75KU T6;  Address T6 0x26;
+TM 1 Hz uDACS16_T30K75KU T7;  Address T7 0x27;
+TM 1 Hz uDACS16_T30K75KU T8;  Address T8 0x28;
+/* TM 1 Hz ADS1115_count_t uDACS_A_N; */
+
+/* RTC data */
+/*
+TM 1 Hz RTC_elapsed_t uDACS_A_elapsed;
+TM 1 Hz RTC_loopdur_t uDACS_A_curloopdur;
+TM 1 Hz RTC_loopdur_t uDACS_A_maxloopdur;
+*/

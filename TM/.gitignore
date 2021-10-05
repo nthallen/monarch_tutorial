@@ -18,6 +18,13 @@ tutorialcltncoui.o
 tutorialsrvr.o
 tutorialsrvroui.cc
 tutorialsrvroui.o
+tutorialengext.cdf
+tutorialengextcdf.oui
+tutorialengextcdf.tmc
+tutorialengext.cc
+tutorialengextoui.cc
+tutorialengext.o
+tutorialengextoui.o
 tutorialtblnc.tmc.dep
 *.err
 *.o
@@ -29,3 +36,4 @@ tutorialdispnc
 doit
 tutorialcltnc
 tutorialsrvr
+tutorialengext
