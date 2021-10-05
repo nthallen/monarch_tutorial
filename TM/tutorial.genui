@@ -1,0 +1,6 @@
+HEADER Monarch Tutorial
+MNEMONIC tut
+HOMEDIR TUTORIAL_DATA_DIR
+
+ 1 C1            Tut Counts
+ 1 C2            Tut Counts

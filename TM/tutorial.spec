@@ -1,5 +1,6 @@
 # tutorial.spec
 tmcbase = tutorial.tmc
+genuibase = tutorial.genui
 
 TGTDIR = /home/tutorial
 IGNORE = "*.o" "*.exe" "*.stackdump" Makefile
